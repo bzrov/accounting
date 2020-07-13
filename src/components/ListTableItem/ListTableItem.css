@@ -1,0 +1,74 @@
+.list-table__item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid var(--main-border-color);
+    border-left: 1px solid var(--main-border-color);
+    border-right: 1px solid var(--main-border-color);
+    opacity: 0;
+}
+.list-table__item_active{
+    animation: fadeIn .2s ease-in-out both ;
+}
+.list-table__col_center{
+    display: flex;
+    justify-content: center;
+}
+.list-table__col_end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-table__col-lg{
+    width: 40%;
+}
+.list-table__col-md{
+    width: 25%;
+    min-width: 121px
+}
+.list-table__col-sm{
+    width: 8%;
+    min-width: 60px;
+}
+.person__main-info{
+    display: flex;
+    align-items: center;
+}
+.person__img-wrapper{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.person__img{
+    width: 100%;
+    height: 100%;
+}
+
+.person__favourite_true .person__favourite-icon path{
+    fill: var(--main-text-color);
+}
+.person__favourite_false .person__favourite-icon path{
+    fill:  var(--main-border-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 483px) {
+    .list-table__col-lg{
+        width: 65%;
+    }
+    .list-table__col-sm{
+        width: 30%;
+        text-align: end;
+    }
+  }

@@ -1,0 +1,11 @@
+.controls__list-filter{
+    width: 100%;
+    background: rgba(0,0,0,0.05);
+}
+.list-filter__input{
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    background: transparent;
+    font-size: 1.5em;
+}

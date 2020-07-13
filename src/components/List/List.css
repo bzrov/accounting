@@ -1,0 +1,16 @@
+.list{
+    max-width: 998px;
+    padding: 0 25px;
+    margin: 0 auto;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+}   
+.list-table{
+    
+}
+.list-preview{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}

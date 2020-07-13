@@ -1,0 +1,11 @@
+.controls__language-control{
+    margin-bottom: 10px;
+    text-align: end;
+}
+.language-control__item{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.language-control__item_active{
+    font-weight: 600;
+}

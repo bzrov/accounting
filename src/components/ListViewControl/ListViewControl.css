@@ -1,0 +1,11 @@
+.controls__list-view-control{
+    display: flex;
+    align-items: center;
+}
+.list-view-control__btn{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.list-view-control__btn-preview{
+    margin-right: 10px;
+}

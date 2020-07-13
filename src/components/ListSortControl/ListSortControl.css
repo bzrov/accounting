@@ -1,0 +1,26 @@
+.list-sort-control__title{
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.list-sort-control__sort-fields{
+    display: flex;
+    margin-bottom: 10px;
+}
+.sort-fields__field{
+    margin-right: 30px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.sort-fields__field_active{
+    font-weight: 600;
+}
+
+.sort-direction__icon{
+    transition: all 0.5s ease-in-out;
+}
+.sort-direction__icon_reverse{
+    transform: scaleY(-1);
+}
