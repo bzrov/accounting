@@ -24,7 +24,6 @@ time, mark, audio, video {
 }
 
 body {
-  margin: 0;
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -32,6 +31,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E5E5E5;
+}
+body,html{
+  overflow-x: hidden;
 }
 .default-theme{
   --main-text-color: #000000;
