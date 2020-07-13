@@ -8,7 +8,7 @@ import {Controls} from './components/Controls/Controls.js'
 
 function App({createInitialState}) {
 	const [listView, setListView] = useState(getParamFromStr(window.location.pathname,"view","&") || "preview")
-	const [listFilterField, setListFilterField] = useState(getParamFromStr(window.location.pathname,"filter_field",null))
+	const [listFilterField, setListFilterField] = useState(getParamFromStr(window.location.pathname,"filter_field",null) || "")
 	const [listSortField, setListSortField] = useState(getParamFromStr(window.location.pathname,"sort_field","&") || "id")
 	const [listSortDirection, setListSortDirection] = useState(getParamFromStr(window.location.pathname,"sort_direction","&") || "asc")
 
@@ -19,9 +19,12 @@ function App({createInitialState}) {
 	}
 
 	function getParamFromStr (str,paramName,symbol) {
-		const strTemp = str.slice(str.indexOf(paramName) + paramName.length +1)
-		return symbol ? strTemp.slice(0,strTemp.indexOf(symbol)) : strTemp
-
+		if (str.indexOf(paramName) > -1){
+			const strTemp = str.slice(str.indexOf(paramName) + paramName.length +1)
+			return symbol ? strTemp.slice(0,strTemp.indexOf(symbol)) : strTemp
+		}
+		return null;
+		
 	}
 
 	const getData = async (url) => {
